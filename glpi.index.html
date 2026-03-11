@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLPI - WALID</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<style>
+
+* {
+    box-sizing: border-box;
+
+
+}
+
+body {
+
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: sans-serif;
+    line-height: 1.8;
+}
+
+.topbar {
+
+    position: fixed;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+}
+
+
+
+
+
+.topbar nav a {
+
+    color: #9f9f9f;
+    text-decoration: none;
+    padding: 0 53px;
+    padding: auto;
+}
+
+
+
+.topbar nav a:hover {
+
+    color: #000;
+
+}
+
+.topbar .social {
+    color: #9f9f9f;
+    float: right;
+
+}
+
+
+nav a.social {
+    left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+
+.social a {
+    padding: 0 5;
+    opacity: .5;
+}
+
+
+
+.main {
+    float: left;
+    background-color: #fff;
+    width: 80%;
+    padding-left: 5%;
+    margin-top:5%;
+    position: relative;
+    z-index: 2;
+}
+
+.baniere img {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    position: relative;
+    float: right;
+    background-color: #fbfbfb;
+    width: 20%;
+    padding: 1%;
+    height: auto;
+    z-index: 1;
+}
+
+.sidebar-title {
+    font-size: 30px;
+    color: #000;
+    margin: 25 0;
+}
+
+.sidebar-title:first-child {
+    margin-top: 0;
+}
+
+.sidebar a {
+    color: #00000081;
+    text-decoration: none;
+
+}
+
+.sidebar ul {
+    margin: 0;
+    list-style: none;
+    font-size: 17px;
+    line-height: 2.3;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+
+}
+
+.sidebar hr {
+
+    border-color: #c4c4c4;
+    margin: 49px 0;
+
+}
+
+.article {
+    overflow: hidden;
+}
+
+.article > p {
+    width: 80%;
+    float:right;
+}
+
+.article a {
+    color: inherit;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+.article-img {
+    float: left;
+    width: 20%;
+    padding:1%;
+}
+
+
+.texte.html {
+    float: right;
+    width: 100%;
+}
+
+.article-img img {
+    width: 100%;
+    height: auto;
+}
+
+.article-date {
+    font-weight: 300;
+    color: rgba(0, 0, 0, .6);
+    margin-bottom: 5px;
+}
+
+
+.footer {
+    clear: both;
+
+}
+
+.footer a {
+    text-decoration: none;
+
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    border: none;
+    color:  rgba(0, 0, 0, 0.87);
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:before {
+    content: '\0000AB';
+    color:  rgba(0, 0, 0, 0.87);
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-left: 25px;
+  }
+  
+  .button:hover span:before {
+    opacity: 1;
+    left: 0;
+  }
+
+h4{
+color: blueviolet;
+}
+
+body {
+  background-image: url("photo/windowss.jpg"); 
+  background-size: cover;        /* L'image couvre toute la page */
+  background-position: center;   /* Centre l'image */
+  background-repeat: no-repeat;  /* Empêche la répétition */
+  
+}
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+    <header class="topbar">
+		<nav>
+			<a href="page.index.html">Acceuil</a>
+			<a href="raport.html">MYSQL</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+		<nav>
+            <h1>GLPI - Dali Walid</h1>
+            
+        </nav>
+	</header>
+
+<main class="main">
+	<article class="article">
+		<a href="article.html" class="article-img"><img src="img/3j1t6t7e.png" alt=""></a>
+		<h2 class="article title">INSTALLATION DU GLPI</h2>
+        <div class="article-date">pour ubuntu 24.04</div>
+        <div class="article-date"><h3>MYSQL doit etres installer!!! (lien en haut de ma doc pour l'installer si besoin)</h3></div>
+<h3>Mis-à-jour des packages (pas obligatoir)</h3>
+<h4>sudo apt update</h4>
+
+<h3>Installation de PHP et Apache</h3>
+<h4>sudo apt -y install php 
+php-{curl,gd,imagick,intl,apcu,memcache,
+imap,mysql,cas,ldap,tidy,pear,xmlrpc,pspell,mbstring,json,
+iconv,xml,gd,xsl,zip,bz2}</h4>
+
+<h3>Installons ensuite Apache ainsi que son module PHP</h3>
+<h4>sudo apt-get -y install apache2 libapache2-mod-php</h4>
+
+<h3>telechargement de GLPI</h3>
+<h4>sudo apt-get -y install wget
+export VER="10.0.11"
+wget https://github.com/glpi-project/glpi/releases/download/$VER/glpi-$VER.tgz</h4>
+
+<h3>Décompressons maintenant l'archive téléchargée</h3>
+<h4>tar xvf glpi-$VER.tgz</h4>
+
+<h3>Il faut ensuite déplacer le dossier glpi dans 
+un répertoire plus adapté on a utiliser /var/www/html</h3>
+<h4>sudo mv glpi /var/www/html</h4>
+
+<h3>Donnons à l'utilisateur Apache les droits de propriétaire sur le répertoire</h3>
+<h4>sudo chown -R www-data:www-data /var/www/html/glpi</h4>
+
+<h3>redémarrer le service apache2 (par precotion)</h3>
+<h4>systemctl restart apache2</h4>
+
+<h2>maintenant rendez vous sur : </h2>
+<h3>http://IP_DE_VOTRE_SERVEUR/glpi</h3>
+	
+		
+</main>
+
+
+
+</body>
+</html> 

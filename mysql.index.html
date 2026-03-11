@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mysql - WALID</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<style>
+
+
+* {
+    box-sizing: border-box;
+
+
+}
+
+body {
+
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: sans-serif;
+    line-height: 1.8;
+}
+
+.topbar {
+
+    position: fixed;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+}
+
+
+
+
+
+.topbar nav a {
+
+    color: #9f9f9f;
+    text-decoration: none;
+    padding: 0 53px;
+    padding: auto;
+}
+
+
+
+.topbar nav a:hover {
+
+    color: #000;
+
+}
+
+.topbar .social {
+    color: #9f9f9f;
+    float: right;
+
+}
+
+
+nav a.social {
+    left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+
+.social a {
+    padding: 0 5;
+    opacity: .5;
+}
+
+
+
+.main {
+    float: left;
+    background-color: #fff;
+    width: 80%;
+    padding-left: 5%;
+    margin-top:5%;
+    position: relative;
+    z-index: 2;
+}
+
+.baniere img {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    position: relative;
+    float: right;
+    background-color: #fbfbfb;
+    width: 20%;
+    padding: 1%;
+    height: auto;
+    z-index: 1;
+}
+
+.sidebar-title {
+    font-size: 30px;
+    color: #000;
+    margin: 25 0;
+}
+
+.sidebar-title:first-child {
+    margin-top: 0;
+}
+
+.sidebar a {
+    color: #00000081;
+    text-decoration: none;
+
+}
+
+.sidebar ul {
+    margin: 0;
+    list-style: none;
+    font-size: 17px;
+    line-height: 2.3;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+
+}
+
+.sidebar hr {
+
+    border-color: #c4c4c4;
+    margin: 49px 0;
+
+}
+
+.article {
+    overflow: hidden;
+}
+
+.article > p {
+    width: 80%;
+    float:right;
+}
+
+.article a {
+    color: inherit;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+.article-img {
+    float: left;
+    width: 20%;
+    padding:1%;
+}
+
+
+.texte.html {
+    float: right;
+    width: 100%;
+}
+
+.article-img img {
+    width: 100%;
+    height: auto;
+}
+
+.article-date {
+    font-weight: 300;
+    color: rgba(0, 0, 0, .6);
+    margin-bottom: 5px;
+}
+
+
+.footer {
+    clear: both;
+
+}
+
+.footer a {
+    text-decoration: none;
+
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    border: none;
+    color:  rgba(0, 0, 0, 0.87);
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:before {
+    content: '\0000AB';
+    color:  rgba(0, 0, 0, 0.87);
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-left: 25px;
+  }
+  
+  .button:hover span:before {
+    opacity: 1;
+    left: 0;
+  }
+
+
+h4{
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+    <header class="topbar">
+		<nav>
+			<a href="page.index.html">Acceuil</a>
+		</nav>
+		<nav>
+            <h1>MYSQL - Dali Walid</h1>
+            <h4 class="social">bonne chance!</h4>
+        </nav>
+	</header>
+
+<main class="main">
+	<article class="article">
+		<a href="article.html" class="article-img"><img src="img/3j1t6t7e.png" alt=""></a>
+		<h2 class="article title">installer le server lamp MYSQL</h2>
+        <div class="article-date">uniquement pour ubuntu 24.04</div>
+
+<h3>1 : mettre à jour le système</h3>
+<h4>sudo apt update && sudo apt upgrade -y</h4>
+
+<h3>2 : installer MariaDB</h3>
+<h4>sudo apt install mariadb-server -y</h4>
+
+<h3>3 : démarrer et activer le service MariaDB</h3>
+<h4>1: sudo systemctl start mariadb</h4>
+<h4>2: sudo systemctl enable mariadb</h4>
+<h4>3: sudo systemctl status mariadb</h4>
+
+<h3>4 : sécuriser MariaDB</h3>
+<h4>sudo mysql_secure_installation</h4>
+
+<h3>5 : créer un utilisateur et une base de données</h3>
+<h4>1: sudo mariadb -u root -p</h4>
+<h4>2: CREATE DATABASE db_example;</h4>
+<h4>3: CREATE USER 'webuser'@'localhost' IDENTIFIED BY 'met_TON_mdp';</h4>
+<h4>4: GRANT ALL PRIVILEGES ON db_example.* TO 'webuser'@'localhost';</h4>
+<h4>5: FLUSH PRIVILEGES;</h4>
+<h4>6: EXIT;</h4>
+
+<h3>6 : tester l’accès</h3>
+<h4>1: mariadb -u webuser -p db_example</h4>
+<h4>2: SHOW TABLES;</h4></td>
+
+<td class="wlder"><h1>installation du GLPI</h1>
+<h3>Mis-à-jour des packages (pas obligatoir)</h3>
+<h4>sudo apt update</h4>
+
+
+
+
+
+
+</main>
+<aside class="sidebar">
+	<h4 class="sidebar-title">passer a la suite</h4>
+	<ul> 
+		<li><a href="glpi.index.html">GLPI</a></li>
+		<li><a href="zabbix.html">ZABBIX</a></li>
+	</ul>
+<hr/>
+	<h4 class="sidebar-title">Auteur</h4>
+	<ul>
+		<li><a href="#">Dali Walid</a></li>
+	</ul>
+</aside>
+
+
+</body>
+</html> 

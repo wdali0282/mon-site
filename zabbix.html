@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zabbix - WALID</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<style>
+    * {
+    box-sizing: border-box;
+
+
+}
+
+body {
+
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: sans-serif;
+    line-height: 1.8;
+}
+
+.topbar {
+
+    position: fixed;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+}
+
+
+
+
+
+.topbar nav a {
+
+    color: #9f9f9f;
+    text-decoration: none;
+    padding: 0 53px;
+    padding: auto;
+}
+
+
+
+.topbar nav a:hover {
+
+    color: #000;
+
+}
+
+.topbar .social {
+    color: #9f9f9f;
+    float: right;
+
+}
+
+
+nav a.social {
+    left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+
+.social a {
+    padding: 0 5;
+    opacity: .5;
+}
+
+
+
+.main {
+    float: left;
+    background-color: #fff;
+    width: 80%;
+    padding-left: 5%;
+    margin-top:5%;
+    position: relative;
+    z-index: 2;
+}
+
+.baniere img {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    position: relative;
+    float: right;
+    background-color: #fbfbfb;
+    width: 20%;
+    padding: 1%;
+    height: auto;
+    z-index: 1;
+}
+
+.sidebar-title {
+    font-size: 30px;
+    color: #000;
+    margin: 25 0;
+}
+
+.sidebar-title:first-child {
+    margin-top: 0;
+}
+
+.sidebar a {
+    color: #00000081;
+    text-decoration: none;
+
+}
+
+.sidebar ul {
+    margin: 0;
+    list-style: none;
+    font-size: 17px;
+    line-height: 2.3;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+
+}
+
+.sidebar hr {
+
+    border-color: #c4c4c4;
+    margin: 49px 0;
+
+}
+
+.article {
+    overflow: hidden;
+}
+
+.article > p {
+    width: 80%;
+    float:right;
+}
+
+.article a {
+    color: inherit;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+.article-img {
+    float: left;
+    width: 20%;
+    padding:1%;
+}
+
+
+.texte.html {
+    float: right;
+    width: 100%;
+}
+
+.article-img img {
+    width: 100%;
+    height: auto;
+}
+
+.article-date {
+    font-weight: 300;
+    color: rgba(0, 0, 0, .6);
+    margin-bottom: 5px;
+}
+
+
+.footer {
+    clear: both;
+
+}
+
+.footer a {
+    text-decoration: none;
+
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    border: none;
+    color:  rgba(0, 0, 0, 0.87);
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:before {
+    content: '\0000AB';
+    color:  rgba(0, 0, 0, 0.87);
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-left: 25px;
+  }
+  
+  .button:hover span:before {
+    opacity: 1;
+    left: 0;
+  }
+
+  h4{
+color: blue;
+  }
+
+  
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <header class="topbar">
+		<nav>
+			<a href="page.index.html">Acceuil</a>
+			<a href="contact.html">Contact</a>
+			
+		</nav>
+		<nav>
+            <h1>zabbix - Dali Walid</h1>
+            <h4 class="social"></h4>
+        </nav>
+	</header>
+
+
+<main class="main">
+	<article class="article">
+		<a href="page.index.html class="article-img"><img src="img/3j1t6t7e.png" alt=""></a>
+		<div class="article-date">uniquement pour ubuntu 24.04
+		<h2 class="article title">Zabbix 7.0 TLS
+		<p>
+
+<h3>se mettre en root</h3>
+ <h4>sudo -s</h4> 
+ 
+ <h3>Installer le dépôt Zabbix</h3>
+
+ <h4>1: wget https://repo.zabbix.com/zabbix/7.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_7.0+ubuntu24.04_all.deb</h4>
+
+ <h4>2: dpkg -i zabbix-release_latest_7.0+ubuntu24.04_all.deb</h4>
+
+ <h4>3: apt update</h4>
+
+<h3>Installer le serveur Zabbix</h3>
+
+<h4>apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent</h4>
+
+<h4>Créer une base de données</h4>
+
+<h4>1: mysql -uroot -p</h4>
+
+<h4>2: mysql> create database zabbix character set utf8mb4 collate utf8mb4_bin;</h4>
+
+<h4>3: mysql> create user zabbix@localhost identified by 'password';</h4>
+
+<h4>4: mysql> grant all privileges on zabbix.* to zabbix@localhost;</h4>
+
+<h4>5: mysql> set global log_bin_trust_function_creators = 1;</h4>
+
+<h4>6: mysql> quit;</h4>
+
+<h4>7: zcat /usr/share/zabbix-sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix</h4>
+
+<h4>8: mysql -uroot -p</h4>
+
+<h4>9: mysql> set global log_bin_trust_function_creators = 0;</h4>
+<h4>10: mysql> quit;</h4>
+
+<h3>Configurez la base de données pour le serveur Zabbix</h3>
+
+<h4>sudo nano /etc/zabbix/zabbix_server.conf</h4>
+
+<h3>chercher:</h3>
+<h3>#DBPassword=</h3>
+<h3>et réécriver en dessous sans le #: DBPassword=votre_mdp</h3>
+<h3>et pour quitter c'est: ctrl X</h3>
+
+<h3>Démarrer les processus serveur et agent Zabbix</h3>
+
+<h4>1: systemctl restart zabbix-server zabbix-agent apache2</h4>
+<h4>2: systemctl enable zabbix-server zabbix-agent apache2</h4>
+
+ <h2>http://host/zabbix</h2>
+ <h3>dans le terminal taper hostname et metter le a la place de host dans l'url</h3> 
+
+<h1>Commencez à utiliser Zabbix</h1>
+		</p>
+	</article>
+	
+</main>
+<aside class="sidebar">
+	<h2 class="sidebar-title">condition</h2>
+	<ul> 
+		<li><a href="dunk.html">MYSQL</a></li>
+		<li><a href="https://www.bing.com/ck/a?!&&p=274066bf1faf550690d65994144c8eaf5728a3c7fbd457322e414f8332f59469JmltdHM9MTc3MzE4NzIwMA&ptn=3&ver=2&hsh=4&fclid=0fa6a0b5-9249-696b-060c-b7a2932a6894&psq=installer+ubuntu+24.04&u=a1aHR0cHM6Ly91YnVudHUuY29tL2Rvd25sb2FkL2Rlc2t0b3A_dmVyc2lvbj0yNC4wNCZhcmNoaXRlY3R1cmU9YW1kNjQmbHRzPXRydWU">ubuntu 24.04</a></li>
+	</ul>
+<hr/>
+	<h4 class="sidebar-title">Auteur</h4>
+	<ul>
+		<li><a href="#">Dali Walid</a></li>
+	</ul>
+</aside>
+
+
+</body>
+</html> 
