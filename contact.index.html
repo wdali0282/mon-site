@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Page Contact</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    width:400px;
+    margin:60px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    margin-top:15px;
+    width:100%;
+    padding:10px;
+    background:#3498db;
+    border:none;
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2980b9;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <a href="index.html">Accueil</a>
+    <h2>Contact / Suggestions</h2>
+    
+
+    <form>
+        <label>Nom</label>
+        <input type="text" placeholder="Votre nom">
+
+        <label>Email</label>
+        <input type="email" placeholder="Votre email">
+
+        <label>Commentaire / Améliorations</label>
+        <textarea rows="5" placeholder="Écrivez ce qu'on peut améliorer..."></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</div>
+
+</body>
+</html>
