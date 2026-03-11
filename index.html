@@ -1,122 +1,117 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>WLD doc</title>
-</head>
-<body>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WLD doc</title>
 
 <style>
+
 body{
-    font-size: 16px;
-    color: rgba(0, 0, 0, .87);
-    font-family: sans-serif;
-    line-height: 1.8;
-    margin: 0;
+font-size:16px;
+color:rgba(0,0,0,.87);
+font-family:sans-serif;
+line-height:1.8;
+margin:0;
 }
 
-.topbar {
+/* HEADER */
 
-    position: fixed;
-    background: #fff;
-    padding: 30px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-    position: relative;
-
+.topbar{
+background:#fff;
+padding:20px;
+box-shadow:0 4px 30px rgba(0,0,0,0.2);
+text-align:center;
 }
 
+/* MENU */
 
-.topbar nav a {
-
-    color: #9f9f9f;
-    text-decoration: none;
-    padding: 0 150px;
-    padding: auto;
+.topbar nav{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:40px;
+flex-wrap:wrap;
 }
 
-
-.topbar nav a:hover {
-
-    color: #000;
-
+.topbar nav a{
+color:#9f9f9f;
+text-decoration:none;
+font-weight:bold;
 }
 
-.baniere img {
-    width: 100%;
-    height: 100%;
+.topbar nav a:hover{
+color:#000;
 }
 
+/* ICÔNES */
 
+.social img{
+width:25px;
+height:25px;
+}
 
-/* Adaptation mobile */
+/* TITRE */
+
+h1{
+font-size:28px;
+margin-top:10px;
+}
+
+/* BANNIERE */
+
+.baniere img{
+width:100%;
+height:auto;
+display:block;
+}
+
+/* MOBILE */
 
 @media (max-width:768px){
 
-body{
-padding:10px;
+.topbar nav{
+flex-direction:column;
+gap:15px;
 }
 
-img{
-max-width:100%;
-height:auto;
+h1{
+font-size:22px;
 }
 
-table{
-width:100%;
-display:block;
-overflow-x:auto;
+.social img{
+width:20px;
+height:20px;
 }
 
 }
-
-
-
-
-
-
 
 </style>
 
+</head>
 
+<body>
 
-    
 <header class="topbar">
-		<nav>
-			<a href="glpi.index.html">GLPI</a>
-			<a href="zabbix.html">ZABBIX</a>
-			<a href="mysql.index.html">MYSQL</a>
-			<a href="contact.html">Contact</a>
-			<a href="#" class="social"><img src="img/logotwitter.png" alt="" title="twitter"></a>
-			<a href="https://www.instagram.com/nba?igsh=MXV0dzlsbmYydml4dw==" class="social"><img src="img/logo.png" alt="" title="instagram"></a>
-		</nav>
-        <nav>
-            <h1>DOC informatique - Dali Walid</h1>
-            
-        </nav>
-	</header>
-<div class="baniere">
-	<img src="photo/windowss.jpg">
-</div>
 
+<nav>
+<a href="glpi.index.html">GLPI</a>
+<a href="zabbix.html">ZABBIX</a>
+<a href="mysql.index.html">MYSQL</a>
+<a href="contact.html">Contact</a>
 
+</nav>
 
+<h1>DOC informatique - Dali Walid</h1>
 
 </header>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="baniere">
+<img src="photo/windowss.jpg">
+</div>
 
 </body>
 </html>
